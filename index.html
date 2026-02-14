@@ -1,92 +1,165 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Modesty With Siddique</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modest with Siddique</title>
+    
     <style>
-        body {
+        * {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f8f0ff;
-            text-align: center;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
         }
 
+        body {
+            background-color: #f1dbc1; /* Aapke screenshot wala cream color */
+            overflow-x: hidden;
+        }
+
+        /* Header Styling */
         header {
-            background-color: #6a0dad;
+            background-color: #1a1a1a; /* Black Header */
             color: white;
-            padding: 20px;
-        }
-
-        nav {
-            background-color: #7b2cbf;
-            padding: 10px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        .main {
-            padding: 30px;
-        }
-
-        .card {
-            background-color: white;
-            width: 300px;
-            margin: 20px auto;
-            border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
-            padding: 15px;
-        }
-
-        .card img {
+            padding: 20px 0;
             width: 100%;
-            border-radius: 10px;
         }
 
-        h1, h2 {
-            margin: 10px 0;
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        footer {
-            background-color: #6a0dad;
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            color: #d1d1d1;
+            text-decoration: none;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
             color: white;
-            padding: 10px;
-            margin-top: 20px;
+        }
+
+        /* Hero Section Styling */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1100px;
+            margin: 80px auto;
+            padding: 0 20px;
+            gap: 40px;
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero-content h1 {
+            font-size: 55px;
+            color: #1a1a1a;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            background-color: #111;
+            color: white;
+            padding: 14px 30px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #333;
+        }
+
+        /* Image Styling */
+        .hero-image {
+            flex: 1;
+            text-align: right;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 450px;
+            border-radius: 20px; 
+            box-shadow: 15px 15px 0px rgba(0,0,0,0.05);
+        }
+
+        
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                margin: 40px auto;
+            }
+            .hero-image {
+                text-align: center;
+            }
+            .hero-content h1 {
+                font-size: 35px;
+            }
         }
     </style>
 </head>
-
 <body>
 
-<header>
-    <h1>Modesty With Siddique</h1>
-</header>
+    <header>
+        <div class="container">
+            <div class="logo">Modest with Siddique</div>
+            <nav>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<nav>
-    <a href="#">Home</a>
-    <a href="#">Gallery</a>
-    <a href="#">Contact</a>
-</nav>
-
-<div class="main">
-
-    <div class="card">
-        <h2>Purple Abaya</h2>
-        <img src="abaya.jpg" alt="Purple Abaya">
-        <p>India’s Trendiest Modest Fashion brand and Online store for Muslim Women Dresses. Here you can shop for modest Islamic clothing featuring Abayas, Hijabs, Kaftans, Phiran, Kurtis & Much more. You can also avail of the periodic exciting discount and offers on our online store for Muslim clothing.
-
-.</p>
-    </div>
-
-</div>
-
-<footer>
-    © 2026 Modesty With sSiddique
-</footer>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Abaya Store & <br> Modest Wear</h1>
+            <p>Ensuring you feel your best with our <br> premium modest supplies.</p>
+            <button class="btn">View More</button>
+        </div>
+        <div class="hero-image">
+            <img src="1000107881.jpg" alt="Elegant Abaya">
+        </div>
+    </section>
 
 </body>
 </html>
