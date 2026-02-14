@@ -1,61 +1,55 @@
 <body>
 
-    <header>
-        <div class="container">
-            <div class="logo">MODEST WITH SIDDIQUE</div>
-            <nav>
-                <ul>
-                    <li>SHOP</li>
-                    <li>ABOUT</li>
-                    <li>CONTACT</li>
-                    <li>NEW ARRIVALS</li>
-                </ul>
-            </nav>
-        </div>
+    <header style="background: #1a1a1a; color: white; padding: 20px 0; text-align: center;">
+        <div class="logo" style="font-size: 20px; letter-spacing: 3px; font-weight: bold; margin-bottom: 15px;">MODEST WITH SIDDIQUE</div>
+        <nav>
+            <ul style="list-style: none; display: flex; justify-content: center; gap: 25px; font-size: 12px; letter-spacing: 1px; padding: 0;">
+                <li>SHOP</li>
+                <li>ABOUT</li>
+                <li>CONTACT</li>
+                <li>NEW ARRIVALS</li>
+                <li>BAG (<span id="cart-count">0</span>)</li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero-img">
-            <img src="siddique.com.jpeg" alt="Premium Abaya Design">
-        </div>
-        <div class="hero-text">
-            <h1>Abaya Store & <br> Modest Wear</h1>
-            <p>Ensuring you feel your best with our premium modest supplies. India's Trendiest Modest Fashion brand and Online store for Muslim Women Dresses.</p>
-            <button class="view-more-btn">VIEW MORE</button>
-        </div>
-    </section>
-
-    <h2 style="text-align:center; margin-top:40px; font-family: serif;">Our Best Sellers</h2>
-    
-    <div class="product-grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px;">
-        
-        <div class="product-item" style="background: #fff; padding: 15px; border-radius: 10px; text-align: center; width: 250px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-            <img src="abaya2.jpg" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
-            <h3 style="font-size: 16px;">Beige Co-ord Set</h3>
-            <p style="font-weight: bold;">₹2,199</p>
-            <button onclick="addToCart('p2', 'Beige Co-ord', 2199)" style="background: #1a1a1a; color: white; padding: 10px; border: none; width: 100%; margin-bottom: 5px; cursor: pointer;">ADD TO CART</button>
-            <button onclick="removeFromCart('p2')" style="color: red; border: 1px solid red; background: none; padding: 8px; width: 100%; cursor: pointer;">DISCARD</button>
-        </div>
-
-        <div class="product-item" style="background: #fff; padding: 15px; border-radius: 10px; text-align: center; width: 250px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-            <img src="abaya3.jpg" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
-            <h3 style="font-size: 16px;">Coffee Brown Suit</h3>
-            <p style="font-weight: bold;">₹2,999</p>
-            <button onclick="addToCart('p3', 'Brown Suit', 2999)" style="background: #1a1a1a; color: white; padding: 10px; border: none; width: 100%; margin-bottom: 5px; cursor: pointer;">ADD TO CART</button>
-            <button onclick="removeFromCart('p3')" style="color: red; border: 1px solid red; background: none; padding: 8px; width: 100%; cursor: pointer;">DISCARD</button>
-        </div>
-
-        <div class="product-item" style="background: #fff; padding: 15px; border-radius: 10px; text-align: center; width: 250px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-            <img src="abaya4.jpg" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
-            <h3 style="font-size: 16px;">Mauve Modest Dress</h3>
-            <p style="font-weight: bold;">₹3,499</p>
-            <button onclick="addToCart('p4', 'Mauve Dress', 3499)" style="background: #1a1a1a; color: white; padding: 10px; border: none; width: 100%; margin-bottom: 5px; cursor: pointer;">ADD TO CART</button>
-            <button onclick="removeFromCart('p4')" style="color: red; border: 1px solid red; background: none; padding: 8px; width: 100%; cursor: pointer;">DISCARD</button>
-        </div>
-
+    <div class="hero-image" style="width: 100%;">
+        <img src="siddique.com.jpeg" alt="Banner" style="width: 100%; display: block;">
     </div>
 
-    <footer style="background: #1a1a1a; color: #888; padding: 30px; text-align: center; font-size: 12px; letter-spacing: 1px;">
+    <section class="hero-content" style="background-color: #fdf6f0; text-align: center; padding: 60px 20px;">
+        <h1 style="font-family: 'Playfair Display', serif; font-size: 48px; font-style: italic; color: #1a1a1a; margin-bottom: 20px;">Abaya Store & <br> Modest Wear</h1>
+        <p style="max-width: 700px; margin: 0 auto 30px; font-size: 16px; line-height: 1.6; color: #444; font-family: sans-serif;">
+            Ensuring you feel your best with our premium modest supplies. India's Trendiest Modest Fashion brand and Online store for Muslim Women Dresses.
+        </p>
+        <button style="background: #1a1a1a; color: white; border: none; padding: 15px 45px; font-size: 14px; letter-spacing: 2px; cursor: pointer;">VIEW MORE</button>
+    </section>
+
+    <div class="main-container" style="padding: 50px 0; background: #fff;">
+        <h2 style="text-align: center; font-family: 'Playfair Display', serif; font-size: 36px; color: #555; margin-bottom: 40px;">Our Best Sellers</h2>
+        
+        <div class="product-grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; max-width: 1200px; margin: 0 auto;">
+            
+            <div class="product-item" style="width: 300px; text-align: center;">
+                <img src="abaya2.jpg" style="width: 100%; margin-bottom: 15px;">
+                <h3 style="font-size: 18px; color: #333; margin-bottom: 5px; font-family: sans-serif;">Beige Co-ord Set</h3>
+                <p style="font-weight: bold; font-size: 16px; margin-bottom: 15px;">₹2,199</p>
+                <button onclick="addToCart('p2', 'Beige Co-ord', 2199)" style="background: #8e8e8e; color: white; border: none; padding: 12px; width: 100%; margin-bottom: 10px; cursor: pointer;">ADD TO CART</button>
+                <button onclick="removeFromCart('p2')" style="background: none; border: 1px solid #ff4d4d; color: #ff4d4d; padding: 8px; width: 100%; font-size: 12px; cursor: pointer;">DISCARD</button>
+            </div>
+
+            <div class="product-item" style="width: 300px; text-align: center;">
+                <img src="abaya3.jpg" style="width: 100%; margin-bottom: 15px;">
+                <h3 style="font-size: 18px; color: #333; margin-bottom: 5px; font-family: sans-serif;">Coffee Brown Suit</h3>
+                <p style="font-weight: bold; font-size: 16px; margin-bottom: 15px;">₹2,999</p>
+                <button onclick="addToCart('p3', 'Brown Suit', 2999)" style="background: #8e8e8e; color: white; border: none; padding: 12px; width: 100%; margin-bottom: 10px; cursor: pointer;">ADD TO CART</button>
+                <button onclick="removeFromCart('p3')" style="background: none; border: 1px solid #ff4d4d; color: #ff4d4d; padding: 8px; width: 100%; font-size: 12px; cursor: pointer;">DISCARD</button>
+            </div>
+
+        </div>
+    </div>
+
+    <footer style="background: #1a1a1a; color: #888; text-align: center; padding: 40px 0; font-size: 11px; letter-spacing: 1px; margin-top: 50px;">
         <p>© 2026 MODEST WITH SHAFAQ SIDDIQUE.</p>
     </footer>
 
