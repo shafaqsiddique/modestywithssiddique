@@ -3,134 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modest with Siddique</title>
+    <title>Modest with Siddique | Home</title>
     
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-
-        body {
-            background-color: #f1dbc1; /* Aapke screenshot wala cream color */
-            overflow-x: hidden;
-        }
-
-        /* Header Styling */
-        header {
-            background-color: #1a1a1a; /* Black Header */
-            color: white;
-            padding: 20px 0;
-            width: 100%;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 22px;
-            font-weight: bold;
-            letter-spacing: 0.5px;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-        }
-
-        nav ul li {
-            margin-left: 25px;
-        }
-
-        nav ul li a {
-            color: #d1d1d1;
-            text-decoration: none;
-            font-size: 15px;
-            transition: 0.3s;
-        }
-
-        nav ul li a:hover {
-            color: white;
-        }
-
-        /* Hero Section Styling */
-        .hero {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            max-width: 1100px;
-            margin: 80px auto;
-            padding: 0 20px;
-            gap: 40px;
-        }
-
-        .hero-content {
-            flex: 1;
-        }
-
-        .hero-content h1 {
-            font-size: 55px;
-            color: #1a1a1a;
-            line-height: 1.1;
-            margin-bottom: 20px;
-        }
-
-        .hero-content p {
-            font-size: 18px;
-            color: #555;
-            margin-bottom: 30px;
-            line-height: 1.6;
-        }
-
-        .btn {
-            background-color: #111;
-            color: white;
-            padding: 14px 30px;
-            border: none;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 4px;
-            transition: 0.3s;
-        }
-
-        .btn:hover {
-            background-color: #333;
-        }
-
-        /* Image Styling */
-        .hero-image {
-            flex: 1;
-            text-align: right;
-        }
-
-        .hero-image img {
-            width: 100%;
-            max-width: 450px;
-            border-radius: 20px; 
-            box-shadow: 15px 15px 0px rgba(0,0,0,0.05);
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #fdf5eb; color: #2c2c2c; font-family: 'Poppins', sans-serif; overflow-x: hidden; }
         
+        /* Header Fix */
+        header { background-color: #1a1a1a; color: white; padding: 15px 0; position: sticky; top: 0; z-index: 1000; }
+        .container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
+        .logo { font-size: 16px; font-weight: bold; letter-spacing: 3px; text-transform: uppercase; }
+        nav ul { list-style: none; display: flex; }
+        nav ul li { margin-left: 15px; }
+        nav ul li a { color: #ddd; text-decoration: none; font-size: 11px; letter-spacing: 1px; }
+
+        /* Unique Heading Style */
+        .hero { display: flex; align-items: center; max-width: 1100px; margin: 60px auto; padding: 0 20px; gap: 50px; }
+        .hero-text { flex: 1; text-align: left; }
+        
+        /* Yeh hai aapka unique font style */
+        .hero-text h1 { 
+            font-family: 'Playfair Display', serif; 
+            font-size: 60px; 
+            line-height: 1.1; 
+            margin-bottom: 20px; 
+            color: #1a1a1a;
+            font-style: italic; /* Fashionable look ke liye */
+        }
+        
+        .hero-text p { font-size: 16px; color: #555; margin-bottom: 30px; line-height: 1.8; }
+        .btn { background: #1a1a1a; color: white; padding: 14px 35px; text-decoration: none; border-radius: 0; display: inline-block; font-size: 12px; letter-spacing: 2px; }
+
+        .hero-img { flex: 1; text-align: right; }
+        .hero-img img { width: 100%; max-width: 450px; border-radius: 5px; box-shadow: 25px 25px 0px #e6d5c1; }
+
+        /* --- PROFESSIONAL MOBILE ALIGNMENT --- */
         @media (max-width: 768px) {
-            .hero {
-                flex-direction: column;
-                text-align: center;
-                margin: 40px auto;
+            .container { flex-direction: column; gap: 10px; }
+            .logo { font-size: 14px; }
+            nav ul li { margin: 0 7px; }
+
+            .hero { flex-direction: column; text-align: center; margin: 30px auto; gap: 25px; }
+            .hero-text { order: 2; padding: 0 10px; }
+            
+            /* Mobile Heading Alignment Fix */
+            .hero-text h1 { 
+                font-size: 36px; 
+                text-align: center; 
+                margin-bottom: 15px;
             }
-            .hero-image {
-                text-align: center;
+            .hero-text p { 
+                font-size: 14px; 
+                text-align: center; 
+                margin: 0 auto 25px auto; 
             }
-            .hero-content h1 {
-                font-size: 35px;
-            }
+            
+            .hero-img { order: 1; text-align: center; width: 100%; }
+            .hero-img img { max-width: 90%; box-shadow: 15px 15px 0px #e6d5c1; }
         }
     </style>
 </head>
@@ -138,30 +69,29 @@
 
     <header>
         <div class="container">
-            <div class="logo">Modest with Siddique</div>
+            <div class="logo">MODEST WITH SIDDIQUE</div>
             <nav>
                 <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <section class="hero">
-        <div class="hero-content">
-            <h1>Abaya Store & <br> Modest Wear</h1>
-            <p>Ensuring you feel your best with our <br> premium modest supplies.India’s Trendiest Modest Fashion brand and Online store for Muslim Women Dresses.
-                Here you can shop for modest Islamic clothing featuring Abayas, Hijabs, Kaftans, Kurtis & Much more.
-                You can also avail of the periodic exciting discount and offers on our online store for Muslim clothing.
-
-</p>
-            <button class="btn">View More</button>
+        <div class="hero-img">
+            <img src="siddique.com.jpg" alt="Elegant Abaya">
         </div>
-        <div class="hero-image">
-            <img src="siddique.com.jpeg" alt="Elegant Abaya">
+        <div class="hero-text">
+            <h1>Abaya Store & <br> Modest Wear</h1>
+            <p>Ensuring you feel your best with our premium modest supplies India's Trendiest Modest Fashion brand and Online store
+                India’s Trendiest Modest Fashion brand and Online store for Muslim Women Dresses
+                Here you can shop for modest Islamic clothing featuring Abayas, Hijabs, Kaftans, Phiran, Kurtis & Much more. You can also avail of the periodic exciting discount and offers on our online store for Muslim clothing.
+
+.</p>
+            <a href="#" class="btn">VIEW COLLECTION</a>
         </div>
     </section>
 
