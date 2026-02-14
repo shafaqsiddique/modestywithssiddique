@@ -5,43 +5,54 @@
 
     <style>
         body {
+            margin: 0;
+            font-family: Arial, sans-serif;
             background-color: #f8f0ff;
-            font-family: Arial;
             text-align: center;
         }
 
-        h1 {
-            background-color: purple;
+        header {
+            background-color: #6a0dad;
             color: white;
-            padding: 15px;
+            padding: 20px;
         }
 
-        h2 {
-            color: #6a0dad;
-        }
-
-        img {
-            width: 300px;
-            border-radius: 10px;
-            margin-top: 15px;
-        }
-
-        p {
-            width: 60%;
-            margin: auto;
+        nav {
+            background-color: #7b2cbf;
             padding: 10px;
         }
 
-        .box {
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .main {
+            padding: 30px;
+        }
+
+        .card {
             background-color: white;
             width: 300px;
             margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
             padding: 15px;
-            border-radius: 8px;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        h1, h2 {
+            margin: 10px 0;
         }
 
         footer {
-            background-color: purple;
+            background-color: #6a0dad;
             color: white;
             padding: 10px;
             margin-top: 20px;
@@ -51,22 +62,31 @@
 
 <body>
 
+<header>
     <h1>Modesty With Siddique</h1>
+</header>
 
-    <h2>Purple Abaya Collection</h2>
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Gallery</a>
+    <a href="#">Contact</a>
+</nav>
 
-    <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf">
+<div class="main">
 
-    <div class="box">
-        <p>
-            Elegant and modest abaya collection.
-            Designed with simplicity and comfort.
-        </p>
+    <div class="card">
+        <h2>Purple Abaya</h2>
+        <img src="abaya.jpg" alt="Purple Abaya">
+        <p>India’s Trendiest Modest Fashion brand and Online store for Muslim Women Dresses. Here you can shop for modest Islamic clothing featuring Abayas, Hijabs, Kaftans, Phiran, Kurtis & Much more. You can also avail of the periodic exciting discount and offers on our online store for Muslim clothing.
+
+.</p>
     </div>
 
-    <footer>
-        © 2026 Modesty With Siddique
-    </footer>
+</div>
+
+<footer>
+    © 2026 Modesty With sSiddique
+</footer>
 
 </body>
 </html>
