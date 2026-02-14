@@ -11,26 +11,25 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { background-color: #fdf5eb; color: #2c2c2c; font-family: 'Poppins', sans-serif; overflow-x: hidden; }
         
-        /* Header Fix */
+        
         header { background-color: #1a1a1a; color: white; padding: 15px 0; position: sticky; top: 0; z-index: 1000; }
         .container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
         .logo { font-size: 16px; font-weight: bold; letter-spacing: 3px; text-transform: uppercase; }
         nav ul { list-style: none; display: flex; }
         nav ul li { margin-left: 15px; }
-        nav ul li a { color: #ddd; text-decoration: none; font-size: 11px; letter-spacing: 1px; }
-
-        /* Unique Heading Style */
+        nav ul li a { color: #ddd; text-decoration: none; font-size: 11px; letter-spacing: 1px; 
+                     
         .hero { display: flex; align-items: center; max-width: 1100px; margin: 60px auto; padding: 0 20px; gap: 50px; }
         .hero-text { flex: 1; text-align: left; }
         
-        /* Yeh hai aapka unique font style */
+        
         .hero-text h1 { 
             font-family: 'Playfair Display', serif; 
             font-size: 60px; 
             line-height: 1.1; 
             margin-bottom: 20px; 
             color: #1a1a1a;
-            font-style: italic; /* Fashionable look ke liye */
+            font-style: italic; 
         }
         
         .hero-text p { font-size: 16px; color: #555; margin-bottom: 30px; line-height: 1.8; }
@@ -39,7 +38,11 @@
         .hero-img { flex: 1; text-align: right; }
         .hero-img img { width: 100%; max-width: 450px; border-radius: 5px; box-shadow: 25px 25px 0px #e6d5c1; }
 
-        /* --- PROFESSIONAL MOBILE ALIGNMENT --- */
+
+@media (max-width: 768px) {
+    .slider-container, .myslides img { height: 250px; }
+}
+        
         @media (max-width: 768px) {
             .container { flex-direction: column; gap: 10px; }
             .logo { font-size: 14px; }
@@ -48,7 +51,7 @@
             .hero { flex-direction: column; text-align: center; margin: 30px auto; gap: 25px; }
             .hero-text { order: 2; padding: 0 10px; }
             
-            /* Mobile Heading Alignment Fix */
+        
             .hero-text h1 { 
                 font-size: 36px; 
                 text-align: center; 
@@ -75,6 +78,8 @@
                     <li><a href="#">SHOP</a></li>
                     <li><a href="#">ABOUT</a></li>
                     <li><a href="#">CONTACT</a></li>
+                  <li><a href="#">NEW ARRIVALS</a></li>
+
                 </ul>
             </nav>
         </div>
@@ -82,7 +87,7 @@
 
     <section class="hero">
         <div class="hero-img">
-            <img src="siddique.com.jpg" alt="Elegant Abaya">
+            <img src="siddique.com.jpeg" alt="Elegant Abaya">
         </div>
         <div class="hero-text">
             <h1>Abaya Store & <br> Modest Wear</h1>
