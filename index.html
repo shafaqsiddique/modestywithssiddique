@@ -1,86 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modest with Siddique | Home</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
-
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { background-color: #fdf5eb; color: #2c2c2c; font-family: 'Poppins', sans-serif; overflow-x: hidden; }
-        
-        
-        header { background-color: #1a1a1a; color: white; padding: 15px 0; position: sticky; top: 0; z-index: 1000; }
-        .container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
-        .logo { font-size: 16px; font-weight: bold; letter-spacing: 3px; text-transform: uppercase; }
-        <li><a href="cart.html">BAG (<span id="cart-count">0</span>)</a></li>
-        
-    <section class="hero">
-        <div class="hero-img">
-            <img src="siddique.com.jpeg" alt="Premium Abaya Design">
-        </div>
-
-        <div class="hero-text">
-            <h1>Abaya Store & <br> Modest Wear</h1>
-            <p>Ensuring you feel your best with our premium modest supplies. India's Trendiest Modest Fashion brand and Online store for Muslim Women Dresses. Here you can shop for modest Islamic clothing featuring Abayas, Hijabs, Kaftans, Kurtis & Much more.</p>
-            <a href="#" class="btn">View More</a>
-        </div>
-        nav ul { list-style: none; display: flex; }
-        nav ul li { margin-left: 20px; }
-        nav ul li a { color: #ddd; text-decoration: none; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; }
-
-        
-        .hero { display: flex; flex-direction: column; align-items: center; text-align: center; width: 100%; margin: 0 auto; }
-        
-        
-        .hero-img { width: 100%; position: relative; }
-        .hero-img img { width: 100%; height: auto; display: block; }
-
-        
-        .hero-text { padding: 40px 20px; max-width: 800px; }
-        
-        
-        .hero-text h1 { 
-            font-family: 'Playfair Display', serif; 
-            font-size: 42px; 
-            line-height: 1.2; 
-            margin-bottom: 20px; 
-            font-style: italic; 
-            color: #1a1a1a;
-            font-weight: 700;
-        }
-        
-        .hero-text p { 
-            font-size: 15px; 
-            color: #555; 
-            line-height: 1.8; 
-            margin-bottom: 30px;
-            padding: 0 10px;
-        }
-
-        .btn { 
-            background: #1a1a1a; 
-            color: white; 
-            padding: 12px 35px; 
-            text-decoration: none; 
-            font-size: 13px; 
-            letter-spacing: 2px; 
-            display: inline-block; 
-            text-transform: uppercase;
-        }
-
-        
-        @media (max-width: 768px) {
-            .container { flex-direction: column; gap: 10px; }
-            nav ul { padding: 5px 0; gap: 10px; }
-            nav ul li { margin: 0 5px; }
-            .hero-text h1 { font-size: 34px; }
-            .hero-text p { font-size: 14px; }
-        }
-    </style>
-</head>
 <body>
 
     <header>
@@ -88,116 +5,58 @@
             <div class="logo">MODEST WITH SIDDIQUE</div>
             <nav>
                 <ul>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">New Arrivals</a></li>
+                    <li>SHOP</li>
+                    <li>ABOUT</li>
+                    <li>CONTACT</li>
+                    <li>NEW ARRIVALS</li>
                 </ul>
             </nav>
         </div>
     </header>
-<section id="shop-collection" style="padding: 60px 20px; max-width: 1200px; margin: 0 auto;">
-    <h2 style="text-align: center; font-family: 'Playfair Display', serif; font-size: 32px; margin-bottom: 40px; color: #1a1a1a;">Our Best Sellers</h2>
-    
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 25px;">
-        
-    
-        
+
     <section class="hero">
         <div class="hero-img">
             <img src="siddique.com.jpeg" alt="Premium Abaya Design">
         </div>
-
         <div class="hero-text">
             <h1>Abaya Store & <br> Modest Wear</h1>
-            <p>Ensuring you feel your best with our premium modest supplies. India's Trendiest Modest Fashion brand and Online store for Muslim Women Dresses. Here you can shop for modest Islamic clothing featuring Abayas, Hijabs, Kaftans, Kurtis & Much more.</p>
-            <a href="#" class="btn">View More</a>
+            <p>Ensuring you feel your best with our premium modest supplies. India's Trendiest Modest Fashion brand and Online store for Muslim Women Dresses.</p>
+            <button class="view-more-btn">VIEW MORE</button>
         </div>
-</section>
-        <div class="product-item" style="background: #fff; padding: 15px; border-radius: 10px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+    </section>
+
+    <h2 style="text-align:center; margin-top:40px; font-family: serif;">Our Best Sellers</h2>
+    
+    <div class="product-grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px;">
+        
+        <div class="product-item" style="background: #fff; padding: 15px; border-radius: 10px; text-align: center; width: 250px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
             <img src="abaya2.jpg" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
-            <h3 style="font-size: 16px; margin-bottom: 10px;">Beige Co-ord Set</h3>
-            <p style="font-weight: bold; margin-bottom: 15px;">₹2,199</p>
-            <button onclick="addToCart('p2', 'Beige Co-ord', 2199)" style="background: #1a1a1a; color: white; border: none; padding: 10px; width: 100%; cursor: pointer; margin-bottom: 8px;">ADD TO CART</button>
-            <button onclick="removeFromCart('p2')" style="color: red; border: 1px solid red; background: none; padding: 8px; width: 100%; cursor: pointer; font-size: 11px;">DISCARD</button>
+            <h3 style="font-size: 16px;">Beige Co-ord Set</h3>
+            <p style="font-weight: bold;">₹2,199</p>
+            <button onclick="addToCart('p2', 'Beige Co-ord', 2199)" style="background: #1a1a1a; color: white; padding: 10px; border: none; width: 100%; margin-bottom: 5px; cursor: pointer;">ADD TO CART</button>
+            <button onclick="removeFromCart('p2')" style="color: red; border: 1px solid red; background: none; padding: 8px; width: 100%; cursor: pointer;">DISCARD</button>
         </div>
 
-        <div class="product-item" style="background: #fff; padding: 15px; border-radius: 10px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+        <div class="product-item" style="background: #fff; padding: 15px; border-radius: 10px; text-align: center; width: 250px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
             <img src="abaya3.jpg" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
-            <h3 style="font-size: 16px; margin-bottom: 10px;">Coffee Brown Suit</h3>
-            <p style="font-weight: bold; margin-bottom: 15px;">₹2,999</p>
-            <button onclick="addToCart('p3', 'Brown Suit', 2999)" style="background: #1a1a1a; color: white; border: none; padding: 10px; width: 100%; cursor: pointer; margin-bottom: 8px;">ADD TO CART</button>
-            <button onclick="removeFromCart('p3')" style="color: red; border: 1px solid red; background: none; padding: 8px; width: 100%; cursor: pointer; font-size: 11px;">DISCARD</button>
+            <h3 style="font-size: 16px;">Coffee Brown Suit</h3>
+            <p style="font-weight: bold;">₹2,999</p>
+            <button onclick="addToCart('p3', 'Brown Suit', 2999)" style="background: #1a1a1a; color: white; padding: 10px; border: none; width: 100%; margin-bottom: 5px; cursor: pointer;">ADD TO CART</button>
+            <button onclick="removeFromCart('p3')" style="color: red; border: 1px solid red; background: none; padding: 8px; width: 100%; cursor: pointer;">DISCARD</button>
         </div>
 
-        <div class="product-item" style="background: #fff; padding: 15px; border-radius: 10px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+        <div class="product-item" style="background: #fff; padding: 15px; border-radius: 10px; text-align: center; width: 250px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
             <img src="abaya4.jpg" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
-            <h3 style="font-size: 16px; margin-bottom: 10px;">Mauve Modest Dress</h3>
-            <p style="font-weight: bold; margin-bottom: 15px;">₹3,499</p>
-            <button onclick="addToCart('p4', 'Mauve Dress', 3499)" style="background: #1a1a1a; color: white; border: none; padding: 10px; width: 100%; cursor: pointer; margin-bottom: 8px;">ADD TO CART</button>
-            <button onclick="removeFromCart('p4')" style="color: red; border: 1px solid red; background: none; padding: 8px; width: 100%; cursor: pointer; font-size: 11px;">DISCARD</button>
-        </div>
-
-        <div class="product-item" style="background: #fff; padding: 15px; border-radius: 10px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
-            <img src="abaya5.jpg" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
-            <h3 style="font-size: 16px; margin-bottom: 10px;">Pastel Green Abaya</h3>
-            <p style="font-weight: bold; margin-bottom: 15px;">₹2,799</p>
-            <button onclick="addToCart('p5', 'Green Abaya', 2799)" style="background: #1a1a1a; color: white; border: none; padding: 10px; width: 100%; cursor: pointer; margin-bottom: 8px;">ADD TO CART</button>
-            <button onclick="removeFromCart('p5')" style="color: red; border: 1px solid red; background: none; padding: 8px; width: 100%; cursor: pointer; font-size: 11px;">DISCARD</button>
+            <h3 style="font-size: 16px;">Mauve Modest Dress</h3>
+            <p style="font-weight: bold;">₹3,499</p>
+            <button onclick="addToCart('p4', 'Mauve Dress', 3499)" style="background: #1a1a1a; color: white; padding: 10px; border: none; width: 100%; margin-bottom: 5px; cursor: pointer;">ADD TO CART</button>
+            <button onclick="removeFromCart('p4')" style="color: red; border: 1px solid red; background: none; padding: 8px; width: 100%; cursor: pointer;">DISCARD</button>
         </div>
 
     </div>
 
-    
-
-    <footer style="background: #1a1a1a; color: #888; padding: 30px 20px; text-align: center; font-size: 11px; letter-spacing: 1px;">
-        <p> MODEST WITH SHAFAQ SIDDIQUE 
-            COMING SOON
-            .</p>
+    <footer style="background: #1a1a1a; color: #888; padding: 30px; text-align: center; font-size: 12px; letter-spacing: 1px;">
+        <p>© 2026 MODEST WITH SHAFAQ SIDDIQUE.</p>
     </footer>
-<script>
-    // 1. Function to add item to local storage
-    function addToCart(id, name, price) {
-        let cart = JSON.parse(localStorage.getItem('myAbayaCart')) || [];
-        
-        let existingItem = cart.find(item => item.id === id);
-        if (existingItem) {
-            existingItem.quantity += 1;
-        } else {
-            cart.push({ id, name, price, quantity: 1 });
-        }
-        
-        localStorage.setItem('myAbayaCart', JSON.stringify(cart)); // Persistent storage
-        updateHeaderUI();
-        alert(name + " has been added to your cart!");
-    }
 
-    // 2. Function to remove/discard specific item from cart
-    function removeFromCart(id) {
-        let cart = JSON.parse(localStorage.getItem('myAbayaCart')) || [];
-        
-        // Purane items mein se us ID ko filter out karna
-        let filteredCart = cart.filter(item => item.id !== id);
-        
-        localStorage.setItem('myAbayaCart', JSON.stringify(filteredCart));
-        updateHeaderUI();
-        alert("Item discarded from cart.");
-    }
-
-    // 3. UI Update for header count
-    function updateHeaderUI() {
-        let cart = JSON.parse(localStorage.getItem('myAbayaCart')) || [];
-        let totalCount = cart.reduce((total, item) => total + item.quantity, 0);
-        
-        // Agar aapke header mein 'cart-count' ID wali span hai toh update hogi
-        let counterElement = document.getElementById('cart-count');
-        if (counterElement) {
-            counterElement.innerText = totalCount;
-        }
-    }
-
-    // Load initial count on page refresh
-    window.onload = updateHeaderUI;
-</script>
 </body>
-</html>
