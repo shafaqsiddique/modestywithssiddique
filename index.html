@@ -67,7 +67,40 @@
     </div>
 
     <footer style="background: #000; color: #888; text-align: center; padding: 50px 0; font-size: 11px; letter-spacing: 2px;">
-        <p>© 2026 MODEST WITH SHAFAQ SIDDIQUE.</p>
+        <p> MODEST WITH S.SIDDIQUE.</p>
     </footer>
+<script>
+    
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
+    function addToCart(id, name, price) {
+        
+        cart.push({ id, name, price });
+        
+        
+        localStorage.setItem('cart', JSON.stringify(cart));
+        
+        
+        updateCartCount();
+        
+        alert(name + " bag mein add ho gaya!");
+    }
+
+    function removeFromCart(id) {
+        // Sirf us product ko hatana jiska ID match ho
+        cart = cart.filter(item => item.id !== id);
+        localStorage.setItem('cart', JSON.stringify(cart));
+        updateCartCount();
+    }
+
+    function updateCartCount() {
+        const countElement = document.getElementById('cart-count');
+        if (countElement) {
+            countElement.innerText = cart.length;
+        }
+    }
+
+   
+    updateCartCount();
+</script>
 </body>
